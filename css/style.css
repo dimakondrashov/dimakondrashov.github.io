@@ -278,4 +278,7 @@ select {
     .forma_zakaza h3 {
     	font-size: 14px;
     }
+    .summa_zakaza h2 {
+    	font-size: 13px;
+    }
 }
