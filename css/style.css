@@ -263,7 +263,7 @@ select {
         background: black; 
     }
 
-    #name {
-    	color: black;
+    .cl1 {
+    	font-size: 8px;
     }
 }
