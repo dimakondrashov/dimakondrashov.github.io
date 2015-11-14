@@ -260,7 +260,7 @@ select {
 
 @media screen and (max-width: 320px) {
 	body {
-        background: green; 
+        background: #808080; 
     }
 
     #name {
