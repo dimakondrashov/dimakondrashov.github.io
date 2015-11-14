@@ -1,0 +1,269 @@
+* {
+	margin: 0;
+ 	padding: 0;
+}
+
+body {
+	background: url(../img/fon.jpg) 100% 100% no-repeat;
+}
+
+
+div#category_menu {
+	width: 100%;
+}
+
+div#category_menu div {
+	display: inline-block;
+	/*border: 1px solid #000;*/
+	width: 33.3%;
+	text-align: center;
+	font-style: oblique;
+	text-transform: uppercase;
+}
+
+#menu_block {
+	width: 50%;
+	height: auto;
+    padding: 20px;
+    margin: 2% auto;
+    background: #FFFFFF;
+	border-radius: 30px;
+}
+
+#title_menu {
+	text-align: center;
+	width: 100%;
+	margin-bottom: 3%;
+}
+
+#body_menu {
+	font-size: 18px;
+	width: 100%;
+	margin-top: 2%;
+}
+
+.checklist {
+	width: 100%; 
+	position: relative;
+}
+
+.type_bludo {
+	display: inline-block;
+	width: 33.3%;
+	height: 100%;
+	position: absolute;
+	text-align: center;
+	vertical-align: top;
+	/*border: 1px solid #000;*/
+}
+
+.choice_bludo {
+	/*text-align: left;
+	margin-left: 17%;*/
+
+}
+
+.count {
+	text-align: center;
+}
+
+/* yначало вертикального выравнивания "тип блюда"*/
+.type_bludo div {
+	display:-moz-inline-box;
+    display:inline-block;
+    vertical-align:middle;
+    zoom:1;
+    //display:inline;
+}
+
+.helper {
+    display:-moz-inline-box;
+    display:inline-block;
+    vertical-align:middle;
+    height:100%;
+    width:0px;
+    zoom:1;
+}
+/* конец вертикального выравнивания*/
+
+.bludo {
+	display: inline-block;
+	/*height: 50px;*/
+	width: 66.6%;
+	margin-left: 33.3%; 
+	margin-bottom: 2%;
+	vertical-align: top;
+	/*overflow: hidden;*/
+}
+
+
+.title_bludo {
+	width: 48%;
+	/*height: 53px;*/
+	text-align: center;
+	display: inline-block;
+	vertical-align: top;
+
+}
+
+.price_bludo {
+	vertical-align: top;
+	width: 50%;
+	/*height: 53px;*/
+	text-align: center;
+	display: inline-block;
+}
+
+.price_bludo p {
+	font-size: 20px;
+	color: red;
+	font-weight: bold;
+}
+.price_bludo input {
+	font-size: 17px;
+	color: black;	
+}
+
+.summa_zakaza {
+	width: 100%;
+	height: auto;
+	padding-top: 2%;
+	margin-bottom: 2%;
+}
+
+.summa_zakaza h2 {
+	padding-top: 3%;
+}
+
+form input {
+	padding: 1%;
+	margin-bottom: 1%;
+}
+
+#order {
+	display: inline-block;
+  	color: white;
+  	font-weight:bold;
+  	text-decoration: none;
+  	padding: .5em 2em;
+  	outline: none;
+  	border-width: 2px 0;
+  	border-style: solid none;
+  	border-color: #FDBE33 #000 #D77206;
+  	border-radius: 6px;
+    background: -webkit-linear-gradient(#F3AE0F, #E38916) #E38916;
+    background: -o-linear-gradient(#F3AE0F, #E38916) #E38916;
+    background: linear-gradient(#F3AE0F, #E38916) #E38916;
+  	transition: 0.2s;	
+}
+
+#order:hover { background: linear-gradient(#f5ae00, #f59500) #f5ae00; }
+#order:active { background: linear-gradient(#f59500, #f5ae00) #f59500; }
+
+span {
+	color:red;
+}
+span.minus {
+	cursor: pointer;
+	color: red;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+span.plus {
+	cursor: pointer;
+	color: #DAA520;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
+a.button {
+  display: inline-block;
+  color: white;
+  font-weight:bold;
+  text-decoration: none;
+  padding: .1em 0.5em;
+  outline: none;
+  border-width: 2px 0;
+  border-style: solid none;
+  border-color: #FDBE33 #000 #D77206;
+  border-radius: 6px;
+  background: linear-gradient(#F3AE0F, #E38916) #E38916;
+  transition: 0.2s;
+} 
+a.button:hover { background: linear-gradient(#f5ae00, #f59500) #f5ae00; }
+a.button:active { background: linear-gradient(#f59500, #f5ae00) #f59500; }
+
+.input {
+	padding: 5px;
+	margin-bottom: 5px;
+}
+
+select {
+    width: 100px;
+    height: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+   /* body {
+        background: red;
+    }*/
+
+    #menu_block {
+    	width: 65%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /*body {
+        background: blue; 
+    }*/
+
+    #menu_block {
+    	width: 75%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+	#body_menu {
+		font-size: 16px;
+	}
+	form input {
+		display: block;
+	}
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+ 	#menu_block {
+    	padding: 10px;
+    }
+
+    #body_menu {
+		font-size: 14px;
+	}
+
+	input.count {
+		width: 30px
+	}
+	#name {
+    	
+    }
+}
+
+@media screen and (max-width: 320px) {
+	body {
+        background: blue; 
+    }
+
+    #name {
+    	color: black;
+    }
+}

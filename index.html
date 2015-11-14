@@ -1,0 +1,329 @@
+<!DOCTYPE html
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<meta name=viewport content="width=device-width, initial-scale=1">
+</head> 
+<body>
+	<div id="menu_block">
+		<div id="title_menu">
+			<h1 class="cl1 animated">Форма заказа обеда</h1> 
+		</div>
+		<div id="category_menu">
+			<div>Вид блюда</div><!--
+			--><div>Название блюда</div><!--
+			--><div>Цена, руб.</div>
+		</div>
+		<div id="body_menu">
+			<div class="checklist">
+				<div class="type_bludo"><!--
+					--><div>Салат</div><!--
+					--><div class="helper"></div><!--
+				--></div><!--
+				--><div class="bludo"><!--
+					--><div class="title_bludo">греческий</div><!--
+					--><div class="price_bludo"><!--
+						--><p>100</p><!--
+						--><a href="javascript: void 0" class="button" onmouseup="summOrder('1',this,'1');">-</a><!--
+						--><input type="text" id="count_1" class="count" value=0 size="1" readonly="readonly"><!--
+						--><input type="hidden" name="price_1" value="100"><!--
+						--><input type="hidden" id="summa_1" value="0"><!--
+						--><a href="javascript: void 0" class="button" onmouseup="summOrder('1',this,'1');">+</a><!--
+					--></div><!--
+				--></div><!--
+				--><div class="bludo"><!--
+					--><div class="title_bludo">
+						цезарь на выбор:
+						<div class="choice_bludo">
+							<input class="check_bludo" type="radio"  value="chicken" checked>с курицей<br>
+							<input class="check_bludo" type="radio"  value="shrimp">с креветками
+						</div>
+					</div><!--
+					--><div class="price_bludo"><!--
+						--><p>100</p><!--
+						--><a href="javascript: void 0" class="button" onmouseup="summOrder('2',this,'2');">-</a><!--
+						--><input type="text" id="count_2" class="count" value=0 size="1" readonly="readonly"><!--
+						--><input type="hidden" name="price_2" value="100"><!--
+						--><input type="hidden" id="summa_2" value="0"><!--
+						--><a href="javascript: void 0" class="button" onmouseup="summOrder('2',this,'2');">+</a><!--
+					--></div><!--
+				--></div>
+			</div>
+			<hr>
+			<br>
+			<div class="checklist">
+				<div class="type_bludo"><!--
+					--><div>Первое</div><!--
+					--><div class="helper"></div><!--
+				--></div><!--
+				--><div class="bludo"><!--
+					--><div class="title_bludo">борщ</div><!--
+					--><div class="price_bludo"><!--
+						--><p>100</p><!--
+						--><a href="javascript: void 0" class="button" onmouseup="summOrder('3',this,'3');">-</a><!--
+						--><input type="text" id="count_3" class="count" value=0 size="1" readonly="readonly"><!--
+						--><input type="hidden" name="price_3" value="100"><!--
+						--><input type="hidden" id="summa_3" value="0"><!--
+						--><a href="javascript: void 0" class="button" onmouseup="summOrder('3',this,'3');">+</a><!--
+					--></div><!--
+				--></div><!--
+				--><div class="bludo"><!--
+					--><div class="title_bludo">с помпушкой</div><!--
+					--><div class="price_bludo"><!--
+						--><p>5</p><!--
+						--><a href="javascript: void 0" class="button" onmouseup="summOrder('4',this,'4');">-</a><!--
+						--><input type="text" id="count_4" class="count" value=0 size="1" readonly="readonly"><!--
+						--><input type="hidden" name="price_4" value="5"><!--
+						--><input type="hidden" id="summa_4" value="0"><!--
+						--><a href="javascript: void 0" class="button" onmouseup="summOrder('4',this,'4');">+</a><!--
+					--></div><!--
+				--></div><!--
+				--><div class="bludo"><!--
+					--><div class="title_bludo">сырный суп</div><!--
+					--><div class="price_bludo"><!--
+						--><p>70</p><!--
+						--><a href="javascript: void 0" class="button" onmouseup="summOrder('5',this,'5');">-</a><!--
+						--><input type="text" id="count_5" class="count" value=0 size="1" readonly="readonly"><!--
+						--><input type="hidden" name="price_5" value="70"><!--
+						--><input type="hidden" id="summa_5" value="0"><!--
+						--><a href="javascript: void 0" class="button" onmouseup="summOrder('5',this,'5');">+</a><!--
+					--></div><!--
+				--></div><!--
+				--><div class="bludo"><!--
+					--><div class="title_bludo">грибной суп</div><!--
+					--><div class="price_bludo"><!--
+						--><p>60</p><!--
+						--><a href="javascript: void 0" class="button" onmouseup="summOrder('6',this,'6');">-</a><!--
+						--><input type="text" id="count_6" class="count" value=0 size="1" readonly="readonly"><!--
+						--><input type="hidden" name="price_6" value="60"><!--
+						--><input type="hidden" id="summa_6" value="0"><!--
+						--><a href="javascript: void 0" class="button" onmouseup="summOrder('6',this,'6');">+</a><!--
+					--></div><!--
+				--></div>
+			</div>
+			<hr>
+			<br>
+			<div class="checklist">
+				<div class="type_bludo"><!--
+					--><div>Второе</div><!--
+					--><div class="helper"></div><!--
+				--></div><!--
+				--><div class="bludo"><!--
+					--><div class="title_bludo">курица</div><!--
+					--><div class="price_bludo"><!--
+						--><p>100</p><!--
+						--><a href="javascript: void 0" class="button" onmouseup="summOrder('7',this,'7');">-</a><!--
+						--><input type="text" id="count_7" class="count" value=0 size="1" readonly="readonly"><!--
+						--><input type="hidden" name="price_7" value="100"><!--
+						--><input type="hidden" id="summa_7" value="0"><!--
+						--><a href="javascript: void 0" class="button" onmouseup="summOrder('7',this,'7');">+</a><!--
+					--></div><!--
+				--></div><!--
+				--><div class="bludo"><!--
+					--><div class="title_bludo">рыба</div><!--
+					--><div class="price_bludo"><!--
+						--><p>120</p><!--
+						--><a href="javascript: void 0" class="button" onmouseup="summOrder('8',this,'8');">-</a><!--
+						--><input type="text" id="count_8" class="count" value=0 size="1" readonly="readonly"><!--
+						--><input type="hidden" name="price_8" value="120"><!--
+						--><input type="hidden" id="summa_8" value="0"><!--
+						--><a href="javascript: void 0" class="button" onmouseup="summOrder('8',this,'8');">+</a><!--
+					--></div><!--
+				--></div><!--
+				--><div class="bludo"><!--
+					--><div class="title_bludo">свинина</div><!--
+					--><div class="price_bludo"><!--
+						--><p>150</p><!--
+						--><a href="javascript: void 0" class="button" onmouseup="summOrder('9',this,'9');">-</a><!--
+						--><input type="text" id="count_9" class="count" value=0 size="1" readonly="readonly"><!--
+						--><input type="hidden" name="price_9" value="150"><!--
+						--><input type="hidden" id="summa_9" value="0"><!--
+						--><a href="javascript: void 0" class="button" onmouseup="summOrder('9',this,'9');">+</a><!--
+					--></div><!--
+				--></div><!--
+				--><div class="bludo"><!--
+					--><div class="title_bludo">говядина</div><!--
+					--><div class="price_bludo"><!--
+						--><p>150</p><!--
+						--><a href="javascript: void 0" class="button" onmouseup="summOrder('10',this,'10');">-</a><!--
+						--><input type="text" id="count_10" class="count" value=0 size="1" readonly="readonly"><!--
+						--><input type="hidden" name="price_10" value="150"><!--
+						--><input type="hidden" id="summa_10" value="0"><!--
+						--><a href="javascript: void 0" class="button" onmouseup="summOrder('10',this,'10');">+</a><!--
+					--></div><!--
+				--></div><!--
+				--><div class="bludo"><!--
+					--><div class="title_bludo">выбор степени прожарки:</div><!--
+					--><div class="price_bludo"><!--
+						--><select><!--
+							--><option value="rare">rare</option><!--
+							--><option value="medium">medium</option><!--
+							--><option value="well done">well done</option><!--
+						--></select><!--
+					--></div><!--
+				--></div>
+			</div>
+			<!-- !!!!!!!!!!!!!!!!!!!!!!! -->
+			<div class="checklist garnir">
+				<div class="type_bludo"><!--
+					--><div>Гарнир</div><!--
+					--><div class="helper"></div><!--
+				--></div><!--
+				--><div class="bludo"><!--
+					--><div class="title_bludo">рис</div><!--
+					--><div class="price_bludo"><!--
+						--><p>50</p><!--
+						--><a href="javascript: void 0" class="button" onmouseup="summOrder('11',this,'11');">-</a><!--
+						--><input type="text" id="count_11" class="count" value=0 size="1" readonly="readonly"><!--
+						--><input type="hidden" name="price_11" value="50"><!--
+						--><input type="hidden" id="summa_11" value="0"><!--
+						--><a href="javascript: void 0" class="button" onmouseup="summOrder('11',this,'11');">+</a><!--
+					--></div><!--
+				--></div><!--
+				--><div class="bludo"><!--
+					--><div class="title_bludo">картофель фри</div><!--
+					--><div class="price_bludo"><!--
+						--><p>30</p><!--
+						--><a href="javascript: void 0" class="button" onmouseup="summOrder('12',this,'12');">-</a><!--
+						--><input type="text" id="count_12" class="count" value=0 size="1" readonly="readonly"><!--
+						--><input type="hidden" name="price_12" value="30"><!--
+						--><input type="hidden" id="summa_12" value="0"><!--
+						--><a href="javascript: void 0" class="button" onmouseup="summOrder('12',this,'12');">+</a><!--
+					--></div><!--
+				--></div><!--
+				--><div class="bludo"><!--
+					--><div class="title_bludo">овощи на гриле</div><!--
+					--><div class="price_bludo"><!--
+						--><p>30</p><!--
+						--><a href="javascript: void 0" class="button" onmouseup="summOrder('13',this,'13');">-</a><!--
+						--><input type="text" id="count_13" class="count" value=0 size="1" readonly="readonly"><!--
+						--><input type="hidden" name="price_13" value="30"><!--
+						--><input type="hidden" id="summa_13" value="0"><!--
+						--><a href="javascript: void 0" class="button" onmouseup="summOrder('13',this,'13');">+</a><!--
+					--></div><!--
+				--></div>
+			</div>
+			<!-- !!!!!!!!!!!!!!!!!!!!!!! -->
+			<hr>
+			<br>
+			<div class="checklist">
+				<div class="type_bludo"><!--
+					--><div>Напиток</div><!--
+					--><div class="helper"></div><!--
+				--></div><!--
+				--><div class="bludo"><!--
+					--><div class="title_bludo">
+						сок на выбор
+						<div class="choice_bludo">
+							<div>
+								<input class="check_bludo" type="radio"  value="orange" checked>апельсиновый<br>
+								<input class="check_bludo" type="radio"  value="apple">яблочный	
+							</div>
+							
+						</div>
+					</div><!--
+					--><div class="price_bludo"><!--
+						--><p>50</p><!--
+						--><a href="javascript: void 0" class="button" onmouseup="summOrder('14',this,'14');">-</a><!--
+						--><input type="text" id="count_14" class="count" value=0 size="1" readonly="readonly"><!--
+						--><input type="hidden" name="price_14" value="50"><!--
+						--><input type="hidden" id="summa_14" value="0"><!--
+						--><a href="javascript: void 0" class="button" onmouseup="summOrder('14',this,'14');">+</a><!--
+					--></div><!--
+				--></div><!--
+				--><div class="bludo"><!--
+					--><div class="title_bludo">
+						кофе на выбор
+						<div class="choice_bludo">
+							<input class="check_bludo" type="radio"  value="espresso" checked>эспрессо<br>
+							<input class="check_bludo" type="radio"  value="amerikano">американо
+						</div>
+						</div><!--
+					--><div class="price_bludo"><!--
+						--><p>80</p><!--
+						--><a href="javascript: void 0" class="button" onmouseup="summOrder('15',this,'15');">-</a><!--
+						--><input type="text" id="count_15" class="count" value=0 size="1" readonly="readonly"><!--
+						--><input type="hidden" name="price_15" value="80"><!--
+						--><input type="hidden" id="summa_15" value="0"><!--
+						--><a href="javascript: void 0" class="button" onmouseup="summOrder('15',this,'15');">+</a><!--
+					--></div><!--
+				--></div><!--
+				--><div class="bludo"><!--
+					--><div class="title_bludo">
+						чай на выбор
+						<div class="choice_bludo">
+							<input class="check_bludo" type="radio"  value="black" checked>черный<br>
+							<input class="check_bludo" type="radio"  value="green">зеленый
+						</div>
+					</div><!--
+					--><div class="price_bludo"><!--
+						--><p>30</p><!--
+						--><a href="javascript: void 0" class="button" onmouseup="summOrder('16',this,'16');">-</a><!--
+						--><input type="text" id="count_16" class="count" value=0 size="1" readonly="readonly"><!--
+						--><input type="hidden" name="price_16" value="30"><!--
+						--><input type="hidden" id="summa_16" value="0"><!--
+						--><a href="javascript: void 0" class="button" onmouseup="summOrder('16',this,'16');">+</a><!--
+					--></div><!--
+				--></div><!--
+				--><div class="bludo"><!--
+					--><div class="title_bludo">сахар <br> к кофе или чаю</div><!--
+					--><div class="price_bludo"><!--
+						--><p>0</p><!--
+						--><a href="javascript: void 0" class="button" onmouseup="summOrder('17',this,'17');">-</a><!--
+						--><input type="text" id="count_17" class="count" value=0 size="1" readonly="readonly"><!--
+						--><input type="hidden" name="price_17" value="0"><!--
+						--><input type="hidden" id="summa_17" value="0"><!--
+						--><a href="javascript: void 0" class="button" onmouseup="summOrder('17',this,'17');">+</a><!--
+					--></div><!--
+				--></div>
+			</div>
+			<hr>
+			<br>
+			<div class="checklist">
+				<div class="type_bludo"><!--
+					--><div>Другое</div><!--
+					--><div class="helper"></div><!--
+				--></div><!--
+				--><div class="bludo"><!--
+					--><div class="title_bludo">
+						хлеб
+						<div class="choice_bludo">
+							<input class="check_bludo" type="radio"  value="white_bread" checked>белый<br>
+							<input class="check_bludo" type="radio"  value="black_bread">черный
+						</div>
+						</div><!--
+					--><div class="price_bludo"><!--
+						--><p>10</p><!--
+						--><a href="javascript: void 0" class="button" onmouseup="summOrder('18',this,'18');">-</a><!--
+						--><input type="text" id="count_18" class="count" value=0 size="1" readonly="readonly"><!--
+						--><input type="hidden" name="price_18" value="10"><!--
+						--><input type="hidden" id="summa_18" value="0"><!--
+						--><a href="javascript: void 0" class="button" onmouseup="summOrder('18',this,'18');">+</a><!--
+					--></div><!--
+				--></div><!--
+			--></div>
+		</div>
+
+		<div class="summa_zakaza">             
+			<h3>Ваш заказ на сумму:</h3>             
+			<h2 id="all_summa">0</h2>       
+		</div>         
+		<div class="forma_zakaza">             
+			<h3>Для заказа обеда необходимо ввести данные:</h3><br>            
+			<form name="form" onsubmit="return validate()">                 
+				<input type="text" name="name" class="textForm" placeholder="введите свое имя">
+				<span  class="warning" id="name"></span><br>  
+				<input type="text" name="fam"  class="textForm" placeholder="введите свою фамилию">
+				<span  class="warning" id="fam"></span><br>        
+				<input type="text" name="tel"  class="textForm" placeholder="введите номер телефона">
+				<span  class="warning" id="tel"></span><br> 
+				<button id="order">Оформить заказ</button>
+			</form>         
+		</div>
+	</div>
+	<script src="js/jquery.js"></script>
+	<script src="js/script.js"></script>
+</body> 
+</html>
