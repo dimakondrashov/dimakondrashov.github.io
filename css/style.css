@@ -263,9 +263,10 @@ select {
         background: black; 
     }
 
-    .cl1 {
+    .title {
     	font-size: 20px;
     }
+
     #category_menu div {
     	font-size: 12px;
     }
@@ -280,5 +281,9 @@ select {
     }
     .summa_zakaza h2 {
     	font-size: 13px;
+    }
+
+    div.title_bludo {
+    	font-size: 10px;
     }
 }

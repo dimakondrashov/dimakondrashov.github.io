@@ -1,5 +1,5 @@
 $(document).ready(function () {
-	$(".cl1").addClass("animated pulse");
+	$(".title").addClass("animated pulse");
 	$(".choice_bludo").hide();
 	$(".garnir").hide();
 	$(".button").click ( function () {
