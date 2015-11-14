@@ -293,4 +293,9 @@ select {
     select {
     	width: 55px;
     }
+
+    .price_bludo p,
+    .count {
+    	font-size: 13px
+    }
 }
