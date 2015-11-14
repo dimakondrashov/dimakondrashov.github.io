@@ -273,4 +273,9 @@ select {
     .warning {
     	font-size: 12px;
     }
+
+    .summa_zakaza h3,
+    .forma_zakaza h3 {
+    	font-size: 14px;
+    }
 }
