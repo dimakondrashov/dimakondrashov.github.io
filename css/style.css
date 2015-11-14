@@ -286,4 +286,8 @@ select {
     div.title_bludo {
     	font-size: 10px;
     }
+
+    div.type_bludo {
+    	font-size: 13px;
+    }
 }
