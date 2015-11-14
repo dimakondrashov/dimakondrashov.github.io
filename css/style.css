@@ -269,4 +269,8 @@ select {
     #category_menu div {
     	font-size: 12px;
     }
+
+    .warning {
+    	font-size: 12px;
+    }
 }
