@@ -297,6 +297,7 @@ select {
 	.count {
 		margin-left:  4%;
 		margin-right: 4%;
+		width: 30px;
 	}
 
     .price_bludo p,
