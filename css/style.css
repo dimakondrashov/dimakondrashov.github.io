@@ -294,6 +294,11 @@ select {
     	width: 55px;
     }
 
+	.count {
+		margin-left:  3%;
+		margin-right: 3%;
+	}
+
     .price_bludo p,
     .count {
     	font-size: 13px
