@@ -251,11 +251,8 @@ select {
 	}
 
 	input.count {
-		width: 30px
+		width: 30px;
 	}
-	#name {
-    	
-    }
 }
 
 @media screen and (max-width: 320px) {
