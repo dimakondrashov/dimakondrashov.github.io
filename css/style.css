@@ -290,4 +290,7 @@ select {
     div.type_bludo {
     	font-size: 13px;
     }
+    select {
+    	width: 30px;
+    }
 }
