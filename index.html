@@ -36,14 +36,14 @@
 				--><div class="bludo"><!--
 					--><div class="title_bludo">
 						цезарь на выбор:
-						<div class="choice_bludo">
-							<input class="check_bludo" type="radio"  value="chicken" checked>с курицей<br>
-							<input class="check_bludo" type="radio"  value="shrimp">с креветками
+						<div class="choice_bludo salad">
+							<input class="check_bludo price_salad" type="radio"  value="chicken" checked>с курицей<br>
+							<input class="check_bludo price_salad" type="radio"  value="shrimp">с креветками
 						</div>
 					</div><!--
-					--><div class="price_bludo"><!--
-						--><p>100</p><!--
-						--><a href="javascript: void 0" class="button" onmouseup="summOrder('2',this,'2');">-</a><!--
+					--><div class="price_bludo show_salad"><!--
+						--><p id="price_cezar">100</p><!--
+						--><a href="javascript: void 0" class="button"  onmouseup="summOrder('2',this,'2');">-</a><!--
 						--><input type="text" id="count_2" class="count" value=0 size="1" readonly="readonly"><!--
 						--><input type="hidden" name="price_2" value="100"><!--
 						--><input type="hidden" id="summa_2" value="0"><!--
@@ -114,44 +114,44 @@
 					--><div class="title_bludo">курица</div><!--
 					--><div class="price_bludo"><!--
 						--><p>100</p><!--
-						--><a href="javascript: void 0" class="button" onmouseup="summOrder('7',this,'7');">-</a><!--
+						--><a href="javascript: void 0" class="button" onmouseup="showGarnir(this); summOrder('7',this,'7');">-</a><!--
 						--><input type="text" id="count_7" class="count" value=0 size="1" readonly="readonly"><!--
 						--><input type="hidden" name="price_7" value="100"><!--
 						--><input type="hidden" id="summa_7" value="0"><!--
-						--><a href="javascript: void 0" class="button" onmouseup="summOrder('7',this,'7');">+</a><!--
+						--><a href="javascript: void 0" class="button" onmouseup="showGarnir(this); summOrder('7',this,'7');">+</a><!--
 					--></div><!--
 				--></div><!--
 				--><div class="bludo"><!--
 					--><div class="title_bludo">рыба</div><!--
 					--><div class="price_bludo"><!--
 						--><p>120</p><!--
-						--><a href="javascript: void 0" class="button" onmouseup="summOrder('8',this,'8');">-</a><!--
+						--><a href="javascript: void 0" class="button" onmouseup="showGarnir(this); summOrder('8',this,'8');">-</a><!--
 						--><input type="text" id="count_8" class="count" value=0 size="1" readonly="readonly"><!--
 						--><input type="hidden" name="price_8" value="120"><!--
 						--><input type="hidden" id="summa_8" value="0"><!--
-						--><a href="javascript: void 0" class="button" onmouseup="summOrder('8',this,'8');">+</a><!--
+						--><a href="javascript: void 0" class="button" onmouseup="showGarnir(this); summOrder('8',this,'8');">+</a><!--
 					--></div><!--
 				--></div><!--
 				--><div class="bludo"><!--
 					--><div class="title_bludo">свинина</div><!--
 					--><div class="price_bludo"><!--
 						--><p>150</p><!--
-						--><a href="javascript: void 0" class="button" onmouseup="summOrder('9',this,'9');">-</a><!--
+						--><a href="javascript: void 0" class="button" onmouseup="showGarnir(this); summOrder('9',this,'9');">-</a><!--
 						--><input type="text" id="count_9" class="count" value=0 size="1" readonly="readonly"><!--
 						--><input type="hidden" name="price_9" value="150"><!--
 						--><input type="hidden" id="summa_9" value="0"><!--
-						--><a href="javascript: void 0" class="button" onmouseup="summOrder('9',this,'9');">+</a><!--
+						--><a href="javascript: void 0" class="button" onmouseup="showGarnir(this); summOrder('9',this,'9');">+</a><!--
 					--></div><!--
 				--></div><!--
 				--><div class="bludo"><!--
 					--><div class="title_bludo">говядина</div><!--
 					--><div class="price_bludo"><!--
-						--><p>150</p><!--
-						--><a href="javascript: void 0" class="button" onmouseup="summOrder('10',this,'10');">-</a><!--
-						--><input type="text" id="count_10" class="count" value=0 size="1" readonly="readonly"><!--
-						--><input type="hidden" name="price_10" value="150"><!--
-						--><input type="hidden" id="summa_10" value="0"><!--
-						--><a href="javascript: void 0" class="button" onmouseup="summOrder('10',this,'10');">+</a><!--
+					--><p>150</p><!--
+					--><a href="javascript: void 0" class="button" onmouseup="showGarnir(this); summOrder('10',this,'10');">-</a><!--
+					--><input type="text" id="count_10" class="count" value=0 size="1" readonly="readonly"><!--
+					--><input type="hidden" name="price_10" value="150"><!--
+					--><input type="hidden" id="summa_10" value="0"><!--
+					--><a href="javascript: void 0" class="button" onmouseup="showGarnir(this); summOrder('10',this,'10');">+</a><!--
 					--></div><!--
 				--></div><!--
 				--><div class="bludo"><!--
@@ -216,7 +216,7 @@
 				--><div class="bludo"><!--
 					--><div class="title_bludo">
 						сок на выбор
-						<div class="choice_bludo">
+						<div class="choice_bludo juice">
 							<div>
 								<input class="check_bludo" type="radio"  value="orange" checked>апельсиновый<br>
 								<input class="check_bludo" type="radio"  value="apple">яблочный	
@@ -236,7 +236,7 @@
 				--><div class="bludo"><!--
 					--><div class="title_bludo">
 						кофе на выбор
-						<div class="choice_bludo">
+						<div class="choice_bludo coffee">
 							<input class="check_bludo" type="radio"  value="espresso" checked>эспрессо<br>
 							<input class="check_bludo" type="radio"  value="amerikano">американо
 						</div>
@@ -253,7 +253,7 @@
 				--><div class="bludo"><!--
 					--><div class="title_bludo">
 						чай на выбор
-						<div class="choice_bludo">
+						<div class="choice_bludo tea">
 							<input class="check_bludo" type="radio"  value="black" checked>черный<br>
 							<input class="check_bludo" type="radio"  value="green">зеленый
 						</div>
@@ -289,7 +289,7 @@
 				--><div class="bludo"><!--
 					--><div class="title_bludo">
 						хлеб
-						<div class="choice_bludo">
+						<div class="choice_bludo bread">
 							<input class="check_bludo" type="radio"  value="white_bread" checked>белый<br>
 							<input class="check_bludo" type="radio"  value="black_bread">черный
 						</div>

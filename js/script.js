@@ -2,21 +2,80 @@ $(document).ready(function () {
 	$(".title").addClass("animated pulse");
 	$(".choice_bludo").hide();
 	$(".garnir").hide();
+
+// подумать над функцией показа меню
+// id in index.html 
+
+	$("[id ^= show_]").click ( function () {
+		if ($(this).is("#show_juice")) {
+			$(".juice").slideDown("slow");
+		};
+	})
+
 	$(".button").click ( function () {
-		// alert($(this).text());
+		// // alert($(this).text());
+		// if($(this).parent().find(".count").val() > 0 ) {
+		// 	$(this).parent().parent().parent().children(".bludo").children(".title_bludo").children(".choice_bludo").slideDown("slow");
+		// 	// $(".choice_bludo").slideDown("slow");
+		// }
+		// else {
+		// 	$(".choice_bludo").slideUp("slow");	
+		// }
 		if($(this).parent().find(".count").val() > 0 ) {
-			$(this).parent().parent().parent().children(".bludo").children(".title_bludo").children(".choice_bludo").slideDown("slow");
-			// $(".choice_bludo").slideDown("slow");
+			if ($(this).parent().hasClass("show_salad")) {
+				$(".salad").slideDown("slow");
+			};
 		}
 		else {
-			$(".choice_bludo").slideUp("slow");	
+			$(".salad").slideUp("slow");	
 		}
 	});
 
+	function animate (price) {
+		$("#price_cezar").text(price);
+		$("[name=price_2]").val(price);
+		$("#price_cezar").addClass("animated pulse").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
+			$("#price_cezar").removeClass("animated pulse");
+		})
+	}
+
+	function updatePriceSalad () {
+		var count = parseInt($("input[id='count_2']").val());
+		var summa = 0;
+
+		$("#summa_2").val($("input[name='price_2']").val() * count);
+		$("input[id^='summa_']").each(function() {
+			summa += parseInt($(this).val());
+		});
+		$("#all_summa").html(summa);
+	}
+
+	$(".price_salad").click (function () {
+		if ( $(this).val() === "shrimp" ) {
+			animate("150");
+		}
+		else {
+			animate("100");
+		}
+		updatePriceSalad();
+	})
+
 	$(".check_bludo").click (function () {
 		$(this).siblings().attr("checked", false);
-	});
-});
+	})
+})
+
+var count = 0;
+function showGarnir (button) {
+	if ( $(button).text() == "+" ) {
+		count++; 
+		$(".garnir").slideDown("slow");
+	}
+	else {
+		if ( ($(button).parent().children(".count").val()) > 0 ) count--;
+		if (count == 0) $(".garnir").slideUp("slow");
+	}
+}
 
 //функция подсчета суммы заказа
 function summOrder(id_edit, obj, price) {
@@ -46,7 +105,7 @@ console.log($(obj).text());
 
 	$("input[id^='summa_']").each(function() {
 		summa += parseInt($(this).val());
-	});
+	})
 	$("#all_summa").html(summa);
 }
 

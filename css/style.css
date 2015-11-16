@@ -5,6 +5,7 @@
 
 body {
 	background: url(../img/fon.jpg) 100% 100% no-repeat;
+  background-size: cover;
 }
 
 
