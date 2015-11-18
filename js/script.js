@@ -104,6 +104,7 @@ console.log($(obj).text());
 
 //проверка форнмы
 function validate(){
+
 var n=document.forms["form"]["name"].value;
 var f=document.forms["form"]["fam"].value;
 var t=document.forms["form"]["tel"].value;
@@ -152,5 +153,9 @@ var reg2 = /[А-Яа-я]/g;
 			document.getElementById("tel").innerHTML="";
 		}
 	}
-	if (flag == false) return false;
+	if (flag == true) {
+		document.location.href='order.html';
+	}
+	
+	return false;
 }

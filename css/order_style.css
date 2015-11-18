@@ -1,0 +1,25 @@
+* {
+	margin: 0;
+ 	padding: 0;
+}
+
+body {
+	background: url(../img/fon.jpg) 100% 100% no-repeat;
+  background-size: cover;
+}
+
+#menu_block {
+	width: 50%;
+	height: auto;
+  padding: 20px;
+  margin: 5% auto;
+  background: #FFFFFF;
+	border-radius: 30px;
+}
+
+#title_menu {
+	text-align: center;
+	width: 100%;
+	margin-bottom: 3%;
+}
+
