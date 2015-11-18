@@ -3,33 +3,26 @@ $(document).ready(function () {
 	$(".choice_bludo").hide();
 	$(".garnir").hide();
 
-// подумать над функцией показа меню
-// id in index.html 
-
-	$("[id ^= show_]").click ( function () {
-		if ($(this).is("#show_juice")) {
-			$(".juice").slideDown("slow");
-		};
-	})
+	function showBludo (object, bludo) {
+		if (bludo == "salad") {console.log("salad");};
+		if ( $(object).hasClass(bludo) ) {
+			if($(object).parent().find(".count").val() > 0 ) {
+				$("div."+bludo+"").slideDown("slow");
+			}
+			else {
+				$("div."+bludo+"").slideUp("slow");	
+			}
+		}
+	}
 
 	$(".button").click ( function () {
-		// // alert($(this).text());
-		// if($(this).parent().find(".count").val() > 0 ) {
-		// 	$(this).parent().parent().parent().children(".bludo").children(".title_bludo").children(".choice_bludo").slideDown("slow");
-		// 	// $(".choice_bludo").slideDown("slow");
-		// }
-		// else {
-		// 	$(".choice_bludo").slideUp("slow");	
-		// }
-		if($(this).parent().find(".count").val() > 0 ) {
-			if ($(this).parent().hasClass("show_salad")) {
-				$(".salad").slideDown("slow");
-			};
-		}
-		else {
-			$(".salad").slideUp("slow");	
-		}
-	});
+		var obj = this;
+		showBludo(obj, "salad" );
+		showBludo(obj, "juice" );
+		showBludo(obj, "coffee");
+		showBludo(obj, "tea"   );
+		showBludo(obj, "bread" );	
+	})
 
 	function animate (price) {
 		$("#price_cezar").text(price);
