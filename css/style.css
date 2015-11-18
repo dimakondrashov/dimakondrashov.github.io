@@ -260,7 +260,7 @@ select {
 @media screen and (max-width: 320px) {
 	body {
         background: black; 
-    }
+  }
 
     .title {
     	font-size: 20px;
@@ -294,15 +294,14 @@ select {
     }
 
 	.count {
+    height: 21px;
+    width: 20px;
 		margin-left:  4%;
 		margin-right: 4%;
-		width: 100px;
 	}
 
     .price_bludo p,
     .count {
     	font-size: 13px;
-      height: 21px;
-      width: 20px;
     }
 }
