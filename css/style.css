@@ -66,6 +66,7 @@ div#category_menu div {
 
 .count {
 	text-align: center;
+  width: 50px;
 }
 
 /* yначало вертикального выравнивания "тип блюда"*/
