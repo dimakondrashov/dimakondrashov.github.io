@@ -301,6 +301,8 @@ select {
 
     .price_bludo p,
     .count {
-    	font-size: 13px
+    	font-size: 13px;
+      height: 21px;
+      width: 20px;
     }
 }
