@@ -242,9 +242,12 @@ select {
 	}
 }
 /*Lenovo*/
-@media screen and (max-width: 530px) {
+@media screen and (max-width: 540px) {
   body {
     background-color: red;
+  }
+  #body_menu {
+    font-size: 5px;
   }
 }
 
