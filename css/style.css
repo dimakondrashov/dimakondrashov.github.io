@@ -242,7 +242,7 @@ select {
 	}
 }
 /*Lenovo*/
-@media screen and (max-width: 540px) {
+@media screen and (min-resolution: 540dpi) and (max-resolution: 960dpi) {
   body {
     background-color: red;
   }
