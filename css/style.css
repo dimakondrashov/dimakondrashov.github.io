@@ -240,6 +240,9 @@ select {
 	form input {
 		display: block;
 	}
+	.title {
+		ont-size: 60%;
+	}
 }
 
 @media screen and (max-width: 480px) {
