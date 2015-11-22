@@ -243,6 +243,10 @@ select {
 	#category_menu div {
 		font-size: 10px;
 	}
+	
+	#menu_block {
+    	width: 80%;
+    }
 }
 
 @media screen and (max-width: 480px) {
