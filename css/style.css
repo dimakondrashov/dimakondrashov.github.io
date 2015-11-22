@@ -238,12 +238,18 @@ select {
 	}
 	
 	#category_menu div {
-		font-size: 10px;
+		font-size: 14px;
 	}
 	
 	#menu_block {
     	width: 70%;
     }
+}
+
+@media screen and (max-width: 533px) {
+	#category_menu div {
+		font-size: 13px;
+	}
 }
 
 @media screen and (max-width: 480px) {
@@ -255,8 +261,8 @@ select {
 		font-size: 14px;
 	}
 	input.count {
-		margin-left:  8%;
-		margin-right:  8%;
+		margin-left:   6%;
+		margin-right:  6%;
 		width: 27px;
 	}
 
