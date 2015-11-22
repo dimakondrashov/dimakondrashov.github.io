@@ -312,4 +312,8 @@ select {
   .price_bludo > p {
     font-size: 13px;
   }
+  
+  .price_bludo input {
+	 font-size: 14px; 
+  }
 }
