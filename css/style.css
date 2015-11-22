@@ -254,6 +254,10 @@ select {
     #body_menu {
 		font-size: 14px;
 	}
+	input.count {
+		margin-top: 6%;
+		width: 40px;
+	}
 
 }
 
