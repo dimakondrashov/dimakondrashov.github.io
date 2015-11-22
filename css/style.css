@@ -224,9 +224,9 @@ select {
 }
 
 @media screen and (max-width: 768px) {
-    /*body {
+    body {
         background: blue; 
-    }*/
+    }
 
     #menu_block {
     	width: 75%;
@@ -240,15 +240,6 @@ select {
 	form input {
 		display: block;
 	}
-}
-/*Lenovo*/
-@media screen and (min-resolution: 540dpi) and (max-resolution: 960dpi) {
-  body {
-    background-color: red;
-  }
-  #body_menu {
-    font-size: 5px;
-  }
 }
 
 @media screen and (max-width: 480px) {
