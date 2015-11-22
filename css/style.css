@@ -258,6 +258,9 @@ select {
 }
 
 @media screen and (max-width: 320px) {
+	#menu_block {
+		width: 80%;
+    }
 	input.count {
 		width: 22px;
 		margin-top: 6%;
