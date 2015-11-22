@@ -223,13 +223,6 @@ select {
     }
 }
 
-@media screen and (max-width: 768px) {
-
-    #menu_block {
-    	width: 75%;
-    }
-}
-
 @media screen and (max-width: 640px) {
 	body {
         background: blue; 
