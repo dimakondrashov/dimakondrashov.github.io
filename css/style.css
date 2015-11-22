@@ -255,8 +255,9 @@ select {
 		font-size: 14px;
 	}
 	input.count {
-		margin-top: 6%;
-		width: 40px;
+		margin-left:  8%;
+		margin-right:  8%;
+		width: 27px;
 	}
 
 }
@@ -265,10 +266,6 @@ select {
 	#menu_block {
 		width: 80%;
     }
-	input.count {
-		width: 22px;
-		margin-top: 6%;
-	}
 
   .title {
     font-size: 20px;
@@ -303,13 +300,14 @@ select {
     width: 55px;
   }
 
-	.count {
+  input.count {
     height: 21px;
-    width: 20px;
-		margin-left:  8%;
-		margin-right: 8%;
+    width: 22px;
+	margin-left:  8%;
+	margin-right: 8%;
     font-size: 13px;
-	}
+	margin-top: 6%;
+  }
 
   .price_bludo > p {
     font-size: 13px;
