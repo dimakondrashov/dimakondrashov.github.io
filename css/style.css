@@ -224,9 +224,6 @@ select {
 }
 
 @media screen and (max-width: 768px) {
-    body {
-        background: blue; 
-    }
 
     #menu_block {
     	width: 75%;
@@ -234,6 +231,9 @@ select {
 }
 
 @media screen and (max-width: 640px) {
+	body {
+        background: blue; 
+    }
 	#body_menu {
 		font-size: 16px;
 	}
