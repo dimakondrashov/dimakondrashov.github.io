@@ -255,7 +255,7 @@ select {
 
 @media screen and (max-width: 480px) {
 	body {
-        background: green;
+        background: blue;
     }*
  	#menu_block {
     	padding: 10px;
