@@ -224,9 +224,6 @@ select {
 }
 
 @media screen and (max-width: 600px) {
-	body {
-        background: red;
-    }
 	
 	#body_menu {
 		font-size: 16px;
@@ -253,6 +250,7 @@ select {
 	#category_menu div {
 		font-size: 13px;
 	}
+
 }
 
 @media screen and (max-width: 480px) {
@@ -261,7 +259,7 @@ select {
     }
 
     #body_menu {
-		font-size: 14px;
+		font-size: 13px;
 	}
 	input.count {
 		margin-left:   4%;
