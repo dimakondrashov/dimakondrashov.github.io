@@ -261,8 +261,9 @@ select {
     	padding: 10px;
     }
 
-    #body_menu {
-		font-size: 10px;
+    div.title_bludo,
+    div.type_bludo {
+		font-size: 9px;
 	}
 	input.count {
 		margin-left:   4%;
