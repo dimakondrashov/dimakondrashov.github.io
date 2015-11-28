@@ -22,6 +22,7 @@
 					--><div>Салат</div><!--
 					--><div class="helper"></div><!--
 				--></div><!--
+			    --><div class="visible_bludo"><!--
 				--><div class="bludo"><!--
 					--><div class="title_bludo">греческий</div><!--
 					--><div class="price_bludo"><!--
@@ -49,8 +50,9 @@
 						--><input type="hidden" id="summa_2" value="0"><!--
 						--><a href="javascript: void 0" class="salad button" onmouseup="summOrder('2',this,'2');">+</a><!--
 					--></div><!--
+				--></div><!--
+				--></div><!--
 				--></div>
-			</div>
 			<hr>
 			<br>
 			<div class="checklist">
@@ -58,6 +60,7 @@
 					--><div>Первое</div><!--
 					--><div class="helper"></div><!--
 				--></div><!--
+				 --><div class="visible_bludo"><!--
 				--><div class="bludo"><!--
 					--><div class="title_bludo">борщ</div><!--
 					--><div class="price_bludo"><!--
@@ -101,6 +104,7 @@
 						--><input type="hidden" id="summa_6" value="0"><!--
 						--><a href="javascript: void 0" class="button" onmouseup="summOrder('6',this,'6');">+</a><!--
 					--></div><!--
+					--></div><!--
 				--></div>
 			</div>
 			<hr>
@@ -110,6 +114,7 @@
 					--><div>Второе</div><!--
 					--><div class="helper"></div><!--
 				--></div><!--
+				 --><div class="visible_bludo"><!--
 				--><div class="bludo"><!--
 					--><div class="title_bludo">курица</div><!--
 					--><div class="price_bludo"><!--
@@ -163,6 +168,7 @@
 							--><option value="well done">well done</option><!--
 						--></select><!--
 					--></div><!--
+					--></div><!--
 				--></div>
 			</div>
 			<!-- !!!!!!!!!!!!!!!!!!!!!!! -->
@@ -171,6 +177,7 @@
 					--><div>Гарнир</div><!--
 					--><div class="helper"></div><!--
 				--></div><!--
+
 				--><div class="bludo"><!--
 					--><div class="title_bludo">рис</div><!--
 					--><div class="price_bludo"><!--
@@ -213,6 +220,7 @@
 					--><div>Напиток</div><!--
 					--><div class="helper"></div><!--
 				--></div><!--
+				 --><div class="visible_bludo"><!--
 				--><div class="bludo"><!--
 					--><div class="title_bludo">
 						сок на выбор
@@ -286,6 +294,7 @@
 					--><div>Другое</div><!--
 					--><div class="helper"></div><!--
 				--></div><!--
+				 --><div class="visible_bludo"><!--
 				--><div class="bludo"><!--
 					--><div class="title_bludo">
 						хлеб
@@ -303,24 +312,27 @@
 						--><a href="javascript: void 0" class="bread button" onmouseup="summOrder('18',this,'18');">+</a><!--
 					--></div><!--
 				--></div><!--
+				--></div><!--
+				--></div><!--
 			--></div>
+			<div class='order'>
+			<div class="summa_zakaza">             
+				<h3>Ваш заказ на сумму:</h3>             
+				<h2 id="all_summa">0</h2>       
+			</div>         
+			<div class="forma_zakaza">             
+				<h3>Для заказа обеда необходимо ввести данные:</h3><br>            
+				<form name="form"  onsubmit="return validate()">                 
+					<input type="text" name="name" class="textForm" placeholder="введите свое имя">
+					<span  class="warning" id="name"></span><br>  
+					<input type="text" name="fam"  class="textForm" placeholder="введите свою фамилию">
+					<span  class="warning" id="fam"></span><br>        
+					<input type="text" name="tel"  class="textForm" placeholder="введите номер телефона">
+					<span  class="warning" id="tel"></span><br> 
+					<button id="order">Оформить заказ</button>
+				</form>         
+			</div>
 		</div>
-
-		<div class="summa_zakaza">             
-			<h3>Ваш заказ на сумму:</h3>             
-			<h2 id="all_summa">0</h2>       
-		</div>         
-		<div class="forma_zakaza">             
-			<h3>Для заказа обеда необходимо ввести данные:</h3><br>            
-			<form name="form"  onsubmit="return validate()">                 
-				<input type="text" name="name" class="textForm" placeholder="введите свое имя">
-				<span  class="warning" id="name"></span><br>  
-				<input type="text" name="fam"  class="textForm" placeholder="введите свою фамилию">
-				<span  class="warning" id="fam"></span><br>        
-				<input type="text" name="tel"  class="textForm" placeholder="введите номер телефона">
-				<span  class="warning" id="tel"></span><br> 
-				<button id="order">Оформить заказ</button>
-			</form>         
 		</div>
 	</div>
 	<script src="js/jquery.js"></script>

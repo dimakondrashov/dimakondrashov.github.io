@@ -2,6 +2,30 @@ $(document).ready(function () {
 	$(".title").addClass("animated pulse");
 	$(".choice_bludo").hide();
 	$(".garnir").hide();
+	//$(".show_bludo").hide();
+	var page_h, page_w;
+function window_resize(){
+page_h = $("html").height();
+page_w = $("html").width();
+if (page_w < 533) {
+		$(".visible_bludo").hide();
+	}
+else{
+		$(".visible_bludo").show();	
+	}
+	console.log('qwerty');
+}
+$(".type_bludo").click (function () {
+		$(this).next(".visible_bludo").toggle();
+	})
+$(window).resize(function(){
+	window_resize();
+
+});
+	
+
+console.log(page_h);
+console.log(page_w);
 
 	function showBludo (object, bludo) {
 		if (bludo == "salad") {console.log("salad");};

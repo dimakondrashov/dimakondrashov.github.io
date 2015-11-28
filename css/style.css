@@ -264,9 +264,14 @@ select {
 	}
 	div.type_bludo {
 		display: block;
-		height: 8%;
+		height: 6%;
 		width: 100%;
 		position: static;	
+	}
+
+	div.type_bludo:hover {
+			background-color: #FDCE5F;
+			border-radius: 30px;
 	}
 
 	.price_bludo p, 
