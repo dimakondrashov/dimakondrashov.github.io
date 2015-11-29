@@ -273,6 +273,12 @@ select {
 		position: static;	
 	}
 
+	.type_bludo {
+		background: url(../img/fon.jpg) 100% 100% no-repeat;
+  		background-size: cover;
+  		border-radius: 15px;
+	}
+
 	div.type_bludo:hover {
 			background-color: #FDCE5F;
 			border-radius: 15px;
