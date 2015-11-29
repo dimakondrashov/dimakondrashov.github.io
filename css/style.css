@@ -5,7 +5,8 @@
 
 body {
 	background: url(../img/fon.jpg) 100% 100% no-repeat;
-  background-size: cover;
+  	background-size: cover;
+  	/*font-family: Helvetica, Arial, sans-serif*/
 }
 
 
@@ -268,7 +269,7 @@ select {
 	div.type_bludo {
 		text-align: center;
 		display: block;
-		height: 6%;
+		height: 5%;
 		width: 100%;
 		position: static;	
 	}
@@ -280,8 +281,12 @@ select {
 	}
 
 	div.type_bludo:hover {
-			background-color: #FDCE5F;
-			border-radius: 15px;
+			/*background: #FDCE5F;*/
+			/*border-radius: 15px;*/
+			-webkit-transform: scale(1.05);
+       		-ms-transform: scale(1.05);
+      		transform: scale(1.05);
+      		cursor: pointer;
 	}
 
 	.price_bludo p, 
