@@ -3,7 +3,13 @@ $(document).ready(function () {
 	$(".choice_bludo").hide();
 	$(".garnir").hide();
 	//$(".show_bludo").hide();
-	var page_h, page_w;
+var page_h, page_w;
+if ($("html").width() < 533) {
+	$(".visible_bludo").hide();
+	$(".type_bludo").click (function () {
+		$(this).next(".visible_bludo").toggle();
+	})
+}
 function window_resize(){
 page_h = $("html").height();
 page_w = $("html").width();
@@ -15,9 +21,7 @@ else{
 	}
 	console.log('qwerty');
 }
-$(".type_bludo").click (function () {
-		$(this).next(".visible_bludo").toggle();
-	})
+
 $(window).resize(function(){
 	window_resize();
 

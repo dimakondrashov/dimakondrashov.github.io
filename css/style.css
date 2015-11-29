@@ -250,6 +250,9 @@ select {
 	/*#category_menu div {
 		font-size: 13px;
 	}*/
+	hr {
+		display: none;
+	}
 	#menu_block {
 		width: 60%;
 	}
@@ -263,6 +266,7 @@ select {
 		width: auto;
 	}
 	div.type_bludo {
+		text-align: center;
 		display: block;
 		height: 6%;
 		width: 100%;
@@ -271,7 +275,7 @@ select {
 
 	div.type_bludo:hover {
 			background-color: #FDCE5F;
-			border-radius: 30px;
+			border-radius: 15px;
 	}
 
 	.price_bludo p, 
