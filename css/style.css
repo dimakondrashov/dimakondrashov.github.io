@@ -309,7 +309,7 @@ select {
 
 }
 
-@media screen and (max-width: 320px) and (orientation: landscape) {
+@media screen and (max-width: 480px) and (orientation: landscape) {
 	/*body {
         background: blue;
     }*
