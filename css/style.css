@@ -327,10 +327,13 @@ select {
 		width: 27px;
 	}
 
-}
+}*/
 
 @media screen and (max-width: 320px) {
-	#menu_block {
+	#body_menu {
+		font-size: 12px;
+	}
+	/*#menu_block {
 		width: 80%;
     }
 
@@ -382,5 +385,5 @@ select {
   
   .price_bludo input {
 	 font-size: 14px; 
-  }
-}*/
+  }*/
+}
