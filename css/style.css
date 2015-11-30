@@ -387,3 +387,9 @@ select {
 	 font-size: 14px; 
   }*/
 }
+
+@media screen and (max-width: 240px) and (orientation: portrait) {
+	input.textForm {
+		width: 140px;
+		font-size: 11px;
+	}
