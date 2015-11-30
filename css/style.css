@@ -309,25 +309,25 @@ select {
 
 }
 
-/*@media screen and (max-width: 480px) {
-	body {
+@media screen and (max-width: 480px) {
+	/*body {
         background: blue;
     }*
  	#menu_block {
     	padding: 10px;
-    }
+    }*/
 
-    div.title_bludo,
+    /*div.title_bludo,*/
     div.type_bludo {
-		font-size: 9px;
+		height: 10%;
 	}
-	input.count {
+	/*input.count {
 		margin-left:   4%;
 		margin-right:  4%;
 		width: 27px;
-	}
+	}*/
 
-}*/
+}
 
 @media screen and (max-width: 320px) {
 	#body_menu {
