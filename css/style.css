@@ -309,7 +309,7 @@ select {
 
 }
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (max-width: 320px) and (orientation: landscape) {
 	/*body {
         background: blue;
     }*
@@ -329,7 +329,7 @@ select {
 
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 320px) and (orientation: portrait) {
 	#body_menu {
 		font-size: 12px;
 	}
