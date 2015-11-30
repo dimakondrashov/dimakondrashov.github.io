@@ -2,11 +2,11 @@ $(document).ready(function () {
 	$(".title").addClass("animated pulse");
 	$(".choice_bludo").hide();
 	$(".garnir").hide();
+
 	if ($("html").width() < 533) {
 		$(".visible_bludo").hide();
 	}
-	//$(".show_bludo").hide();
-var page_h, page_w;
+	var page_h, page_w;
 	
 	$(".type_bludo").click (function () {
 		if ($("html").width() < 533) {
@@ -15,24 +15,22 @@ var page_h, page_w;
 			console.log($("html").width());
 		}
 	})
-function window_resize(){
-page_h = $("html").height();
-page_w = $("html").width();
-if (page_w < 533) {
-		$(".visible_bludo").hide();
-		console.log('qwerty');
+	function window_resize(){
+		page_h = $("html").height();
+		page_w = $("html").width();
+		if (page_w < 533) {
+			$(".visible_bludo").hide();
+			// console.log('qwerty');
+		}
+		else{
+			$(".visible_bludo").show();	
+		}
 	}
-else{
-		$(".visible_bludo").show();	
-	}
-	
-}
 
-$(window).resize(function(){
-	window_resize();
-});
+	$(window).resize(function(){
+		window_resize();
+	});
 	
-
 	function showBludo (object, bludo) {
 		if (bludo == "salad") {console.log("salad");};
 		if ( $(object).hasClass(bludo) ) {
