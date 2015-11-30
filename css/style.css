@@ -6,7 +6,6 @@
 body {
 	background: url(../img/fon.jpg) 100% 100% no-repeat;
   	background-size: cover;
-  	/*font-family: Helvetica, Arial, sans-serif*/
 }
 
 
@@ -16,7 +15,6 @@ div#category_menu {
 
 div#category_menu div {
 	display: inline-block;
-	/*border: 1px solid #000;*/
 	width: 33.3%;
 	text-align: center;
 	font-style: oblique;
@@ -56,7 +54,6 @@ div#category_menu div {
 	position: absolute;
 	text-align: center;
 	vertical-align: top;
-	/*border: 1px solid #000;*/
 }
 
 .choice_bludo {
@@ -91,18 +88,16 @@ div#category_menu div {
 
 .bludo {
 	display: inline-block;
-	/*height: 50px;*/
 	width: 66.6%;
 	margin-left: 33.3%; 
 	margin-bottom: 2%;
 	vertical-align: top;
-	/*overflow: hidden;*/
+	
 }
 
 
 .title_bludo {
 	width: 48%;
-	/*height: 53px;*/
 	text-align: center;
 	display: inline-block;
 	vertical-align: top;
@@ -112,7 +107,6 @@ div#category_menu div {
 .price_bludo {
 	vertical-align: top;
 	width: 50%;
-	/*height: 53px;*/
 	text-align: center;
 	display: inline-block;
 }
@@ -188,19 +182,20 @@ hr {
 }
 
 a.button {
-  display: inline-block;
-  color: white;
-  font-weight:bold;
-  text-decoration: none;
-  padding: .1em 0.5em;
-  outline: none;
-  border-width: 2px 0;
-  border-style: solid none;
-  border-color: #FDBE33 #000 #D77206;
-  border-radius: 6px;
-  background: linear-gradient(#F3AE0F, #E38916) #E38916;
-  transition: 0.2s;
+  	display: inline-block;
+	color: white;
+	font-weight:bold;
+	text-decoration: none;
+	padding: .1em 0.5em;
+	outline: none;
+	border-width: 2px 0;
+	border-style: solid none;
+	border-color: #FDBE33 #000 #D77206;
+	border-radius: 6px;
+	background: linear-gradient(#F3AE0F, #E38916) #E38916;
+	transition: 0.2s;
 } 
+
 a.button:hover { background: linear-gradient(#f5ae00, #f59500) #f5ae00; }
 a.button:active { background: linear-gradient(#f59500, #f5ae00) #f59500; }
 
@@ -215,10 +210,6 @@ select {
 }
 
 @media screen and (max-width: 1024px) {
-   /* body {
-        background: red;
-    }*/
-
     #menu_block {
     	width: 65%;
     }
@@ -248,9 +239,6 @@ select {
 }
 
 @media screen and (max-width: 533px) {
-	/*#category_menu div {
-		font-size: 13px;
-	}*/
 	hr {
 		display: none;
 	}
@@ -281,12 +269,10 @@ select {
 	}
 
 	div.type_bludo:hover {
-			/*background: #FDCE5F;*/
-			/*border-radius: 15px;*/
-			-webkit-transform: scale(1.05);
-       		-ms-transform: scale(1.05);
-      		transform: scale(1.05);
-      		cursor: pointer;
+		-webkit-transform: scale(1.05);
+       	-ms-transform: scale(1.05);
+      	transform: scale(1.05);
+      	cursor: pointer;
 	}
 
 	.price_bludo p, 
