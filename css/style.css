@@ -393,3 +393,6 @@ select {
 		width: 140px;
 		font-size: 11px;
 	}
+	a.button {
+		font-size: 12px;
+	}
